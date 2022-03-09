@@ -126,11 +126,11 @@ int main(){
 
 
     //*********************** Multiplication Table of 6 *******************************
-    int const c=6;
-    for (int i = 1; i <= 10; i++)
-    {
-        cout<<"6 multiplied by "<<i<<"= "<<c*i<<endl;
-    }
+    // int const c=6;
+    // for (int i = 1; i <= 10; i++)
+    // {
+    //     cout<<"6 multiplied by "<<i<<"= "<<c*i<<endl;
+    // }
     
     
     
