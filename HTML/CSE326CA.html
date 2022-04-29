@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fitness Website</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: "Poppins", sans-serif;
+      box-sizing: border-box;
+    }
+    /* CSS Reset */
+    .container-bg{
+      background: url("gym.jpg") no-repeat center center/cover;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .left {
+      display: inline-block;
+      /* border: 2px solid red; */
+      position: absolute;
+      left: 60px;
+      top: 50px;
+    }
+
+    .left img {
+      width: 136px;
+      filter: invert(100%);
+    }
+
+    .left div {
+      line-height: 10px;
+      font-size: 26px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+    }
+
+    .mid {
+      display: block;
+      width: 60%;
+      margin: 29px auto;
+      /* border: 2px solid green; */
+    }
+
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 43px;
+      display: inline-block;
+      /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+      display: inline-block;
+    }
+
+    .navbar li {
+      display: inline-block;
+      font-size: 25px;
+    }
+
+    .navbar li a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: rgb(0, 0, 0);
+    }
+
+    .btn {
+      font-family: "Poppins", sans-serif;
+      margin: 0px 9px;
+      background-color: rgb(138, 63, 63);
+      color: white;
+      padding: 4px 14px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: rgb(250, 73, 73);
+    }
+
+    .container {
+      color: black;
+      border: 2px solid rgb(0, 0, 0);
+      /* background-color: rgba(233, 58, 58, 0.544); */
+      background: url("https://cdn.pixabay.com/photo/2021/08/02/22/41/background-6517956_960_720.jpg") no-repeat center center/cover;
+      padding: 106px 80px;
+      position: absolute;
+      top: 7%;
+      left: 7%;
+      padding: 60px;
+      width: 33%;
+      border-radius: 28px;
+    }
+
+    .container ul {
+      font-size: 20px;
+    }
+
+    .container h1 {
+      text-align: center;
+    }
+
+    .container .btn {
+      text-align: center;
+      display: block;
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background: url("./boxing.jpg") no-repeat center center/cover;
+      position: relative;
+    }
+
+    .hero > div {
+      position: absolute;
+      top: 20%;
+      left: 60%;
+      text-align: center;
+      color: white;
+      /* border: 1px solid black; */
+      background-color: rgb(65, 65, 65);
+      padding: 30px 60px;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    .hero > div a {
+      display: block;
+      text-decoration: none;
+      margin-top: 16px;
+      padding: 16px 32px;
+      border: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 15px;
+      transition: all 0.25s ease-in-out;
+    }
+
+    .hero > div a:hover {
+      background-color: #fff;
+      color: rgb(65, 65, 65);
+    }
+
+    footer {
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer a:hover {
+      color: rgb(17, 28, 238);
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    .header {
+      background: #a64646;
+      display: flex;
+      align-items: center;
+      padding: 10bpx 0px;
+    }
+    .header a {
+      color: white;
+    }
+
+    .header ul {
+      list-style: none;
+      display: flex;
+      padding: 0px;
+      margin: 0px;
+    }
+    footer nav ul {
+      flex-direction: column;
+    }
+    footer {
+      font-family: "Poppins", sans-serif;
+      align-items: top;
+      height: 250px;
+    }
+
+    footer ul li {
+      text-align: left;
+      padding-left: 20px;
+      margin-top: 10px;
+      font-size: 13px;
+      font-family: "Poppins", sans-serif;
+    }
+    footer nav,
+    div {
+      margin: 0px auto;
+    }
+    footer div h3 {
+      font-size: 20px;
+    }
+    footer p {
+      font-size: 10px;
+    }
+    .footer-mid p {
+      font-size: 14px;
+    }
+    
+    img {
+      border-radius: 5px;
+      box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    img:hover {
+      box-shadow: 2px 2px 20px #0d774d;
+    }
+    .contact-us {
+      padding: 31.5px 15px;
+    }
+    
+
+    .blog{
+      border: 2px solid black;
+      position:relative;
+      background: url('https://wallpaperaccess.com/full/1429606.jpg') no-repeat center center/cover;
+      width: 100%;
+      height: 550px;
+      
+      
+    }
+
+    .blog-left{
+      /* border: 2px solid black; */
+      display: inline-block;
+      min-height: 50vh;
+      margin-top: 70px;
+      margin-left: 100px;
+    }
+    .blog-right{
+      color: white;
+      position: absolute;
+      top: -100px;
+      border: 2px solid rgb(255, 255, 255);
+      border-radius: 10px;
+      margin-bottom: 100px;
+      margin-left: 150px;
+      margin-top: 200px;
+      padding: 30px 20px;
+      display: inline-block;
+      width: 40%;
+      height: 55%;
+      text-align: center;
+      
+
+    }
+
+  </style>
+
+  <body>
+    <header class="header">
+      <!-- Left box for logo -->
+      <div class="left">
+        <!-- <img src="img/gym.png" alt="" /> -->
+        <div class="lets">Let's Fitness!</div>
+      </div>
+      <!-- Mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active" target="_blank">Home</a></li>
+          <li><a href="#" target="_blank">About Us</a></li>
+          <li>
+            <a href="BMICalculator.html" target="_blank">Fitness Calculator</a>
+          </li>
+          <li><a href="#" target="_blank">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Right box for buttons -->
+      <div class="right">
+        <a href="FromsPractice.html" class="btn" target="_blank">Regiter Now</a>
+      </div>
+    </header>
+    <div class="container-bg">
+      <div class="container">
+        <h1>Why should you join us!</h1>
+        <ul>
+          <li>We have taken a great care in terms of hygiene and sanitation.</li>
+          <li>We have all the major & minor machines and gym equipment.</li>
+          <li>Gym timing - 6am to 9pm. 7 days a week</li>
+          <li>We are excited for you to start your fitness journey!</li>
+          <a href="FromsPractice.html" target="_blank" class="btn"
+            >Register Now!</a
+          >
+        </ul>
+      </div>
+    </div>
+    <div class="hero">
+      <div>
+        <h3 class="BMI">Start your Fitness Journey</h3>
+        <a href="./BMICalculator.html" target="_blank">Check your BMI here</a>
+      </div>
+    </div>
+    
+    <div class="blog">
+      <div class="blog-left">
+        <img src="https://i.pinimg.com/564x/dd/f4/a3/ddf4a3fb1a6b3ed4d2d0259e6f4de90c.jpg" alt="Loading">
+      </div>
+      <div class="blog-right">
+        <h2>Nutrition Blog</h2>
+        <p>A balanced diet is one that fulfills all of a person's nutritional needs. Humans need a certain amount of calories and nutrients to stay healthy. A balanced diet provides all the nutrients a person requires, without going over the recommended daily calorie intake. an example of a balanced diet is a balanced meal including vegetables and fruits that must form about half of the human's plate serving since vegetables and fruits are the healthiest foods to eat. The rest of the food plate serving should contain proteins and grains.</p>
+      </div>
+    </div>
+    <footer class="header" id="footer">
+      <nav class="hfc">
+        <h3>ABOUT US</h3>
+        <ul>
+          <li>Name : AADARSH</li>
+          <li>Reg no : 12116817</li>
+          <li>Section : K21ST</li>
+          <li>Roll no : RK21STB97</li>
+        </ul>
+      </nav>
+      <div class="footer-mid">
+        <p>Your Fitness Journey MATTERS!</p>
+      </div>
+
+      <div class="hfc copyright">
+        <h3>CONTACT US</h3>
+        <ul>
+          aadarshg2001@gmail.com
+          <li>
+            <a
+              target="_blank"
+              class="facebook1"
+              href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" class="insta1" href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" class="twitter1" href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+
+        <div class="hfc"> 
+                <p>&#169 Copyright. All rights reserved</p>
+            </div>
+      </div>
+    </footer>
+  </body>
+</html>
