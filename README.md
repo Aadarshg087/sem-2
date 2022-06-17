@@ -1,3 +1,3 @@
-# Semester 2 C++
+# Semester 2
 
 
