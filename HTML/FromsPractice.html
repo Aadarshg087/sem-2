@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./FormsPractice.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <section>
+      <h2>Forms</h2>
+      <h3>Fill your data below</h3>
+      <form action="form.java">
+        <div>
+          <input type="text" name="Name" id="01" placeholder="Name" />
+        </div>
+        <br />
+        <div>
+          <input
+            type="email"
+            name="email"
+            id="02"
+            placeholder="Email Address"
+          />
+        </div>
+        <br />
+        <div>
+          <input
+            type="number"
+            name="number"
+            id="03"
+            placeholder="Contact Number"
+          />
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" name="checkbox" id="04" />
+          <label for="04">Would you like to hire Personal Trainer </label>
+        </div>
+        <br />
+        <div>
+          <label for="05">Date of Births</label>
+          <input type="date" name="date" id="05" />
+        </div>
+        <br />
+        <div class="gender">
+          <input type="radio" name="radio" id="06" value="male" />
+          <label class="gender" for="">Male</label> <br />
+          <input type="radio" name="radio" id="06" value="female" />
+          <label for="" class="gender">Female</label>
+        </div>
+        <div class="queries">
+          <p>Any personal preference you would like to mention</p>
+          <textarea name="queres" id="09" cols="30" rows="10"></textarea>
+        </div>
+        <br />
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+        <!-- <p>This is an empty character &#8203;</p> -->
+      </form>
+    </section>
+  </body>
+</html>

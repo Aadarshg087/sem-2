@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Submit your Form</title>
+    </head>
+    <body>
+        <form action="https://lpu.in/" target="_blank" method="get">   
+        <!--_blank for new tab and _self is for in same tab and 
+            action is used to add link in the submit tab and 
+            using get{contain max 100 characters} in method function will show filled valuesin the url.
+            That's why we use "post" in order to hide the sensitive information during filling the form
+            So it doesn't show up in the URL -->
+        <p style="color: blue;">Maximum length of a textfeild is 20 character</p>
+        <label> First Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter first name here"><br><br>
+        <label> Last Name:</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter last name here"><br><br>
+        <label> Degree Name:</label>
+        <input type="text" name="dname" id="dname" placeholder="Degree Name"><br><br>
+        <label>Password:</label>
+        <!--Placeholder will disappear when client will start to type. 
+            But if you use value in place of placeholder the client will have to delete the 
+            characters first and then fill the form-->
+        <input type="password" name="pname" id="pname" placeholder="Password"><br><br>
+        <!--password input type will make the details filled by the clients dotted for obvious reasons-->
+        <label>Multi-text Field: </label>
+        <textarea placeholder="Give your Feedback"></textarea><br><br>
+        <!--textarea is used to add multiple coloumns and rows and can hold many characters.
+            You can give vlaue of col="5" and rows="2" manuallly-->
+        
+        <br><br>                                             <!--br is used to break the line and 2 times to go to the next line-->
+        <input type="submit" value="SUBMIT">&nbsp;&nbsp;     <!--&nbsp is used to continue on the same line-->
+        <input type="reset" value="RESET">
+    </form>   
+</body>
+</html>

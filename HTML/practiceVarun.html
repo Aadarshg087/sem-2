@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+
+    <style>
+      * {
+        font-family: "Bebas Neue", cursive;
+        color: rgb(255, 255, 255);
+      }
+      .horiLists {
+        background-color: rgb(255, 71, 71);
+        border-radius: 15px;
+      }
+      .horiLists ul {
+        overflow: auto;
+      }
+      .horiLists ul a:hover {
+        color: rgb(245, 159, 159);
+        list-style: none;
+
+      }
+      .horiLists li {
+        border: 2px solid black;
+        padding: 20px 50px 20px 50px;
+        float: left;
+        list-style: none;
+        font-size: 30px;
+        /* background-color: rgb(255, 71, 71); */
+      }
+      .horiLists input {
+        font-family: sans-serif;
+        margin-top: 25px;
+        margin-left: 250px;
+        width: 250px;
+        height: 30px;
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        border: 0.5px solid black;
+      }
+      #Search{
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="horiLists">
+      <ul>
+        <li><a href="https://www.google.com/" target="_blank">Home</a></li>
+        <li><a href="https://www.google.com/" target="_blank">Products</a></li>
+        <li><a href="https://www.google.com/" target="_blank">Visit Us</a></li>
+        <li><a href="https://www.google.com/" target="_blank">Feedback</a></li>
+        <li><a href="https://www.google.com/" target="_blank">Contact</a></li>
+        <div>
+          <input
+            type="text"
+            placeholder="Search this website"
+            id="Search"
+          />
+        </div>
+      </ul>
+    </div>
+  </body>
+</html>

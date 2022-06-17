@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        *{
+            font-family: 'poppins';
+        }
+        body{
+            background: linear-gradient(135deg,rgb(211, 239, 249),rgb(3, 135, 149));
+
+        }
+        .heading{
+            font-weight: bolder;
+            text-decoration: underline;
+            font-size: large;
+            /* border: 2px solid black; */
+        }
+        .form{
+            border-radius: 10px;
+            display: block;
+            margin-top: 50px;
+            width: 35%;
+            margin: 40px auto;
+            font-size: large;
+            background: linear-gradient(135deg,rgb(255, 222, 150),rgb(255, 91, 91));
+        }
+        .input{
+            border: 2px solid black;
+            border-radius: 10px;
+            padding-left: 7px;
+        }
+        .btn{
+            margin: 0px 20px;
+            border-radius: 10px;
+            border: 1px solid black;
+            padding: 5px 20px;
+        }
+        .btn:hover{
+            cursor: pointer;
+            color: rgb(252, 252, 252);
+            background-color: black;
+        }
+        .area{
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="https://www.fifa.com/tournaments/mens/worldcup/qatar2022" class="form" target="_blank">
+        <fieldset>
+            <legend class="heading">Your Feedback</legend>
+            Name: <input type="text" placeholder="Enter here" class="input"><br><br>
+            Contact Number: <input type="number" placeholder="Enter here" class="input"><br><br>
+            Your Email Id: <input type="text" class="input" placeholder="Enter here"> <br><br>    
+            Gender: <br> Male<input type="radio" name="Male" class="input">
+                    Female<input type="radio" name="Male" class="input"> <br><br>
+            Tell me something <input type="dropdown"><br><br>
+            Give us your feedback:- <br><textarea name="area" cols="50" rows="10" class="area"></textarea><br><br>
+            <input type="button" value="Submit" class="btn">
+            <input type="reset" value="Reset" class="btn">
+        </fieldset>
+    </form>
+    
+</body>
+</html>

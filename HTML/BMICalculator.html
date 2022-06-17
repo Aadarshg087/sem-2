@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <script>
+      function BMI() {
+        var h = document.getElementById("h").value;
+        var w = document.getElementById("w").value;
+        var bmi = w / (((h / 100) * h) / 100);
+        var bmio = bmi.toFixed(2);
+
+        document.getElementById("result").innerHTML = "Your BMI is " + bmio;
+      }
+    </script>
+    <style>
+      body {
+        background-image: url("https://cdn.pixabay.com/photo/2017/06/01/18/46/cook-2364221_960_720.jpg");
+        font-family: "Poppins";
+        width: 100%;
+      }
+      .bmimainservice-box {
+        /* color: white; */
+        text-align: center;
+        /* background: url('gymtwo.jpg'); */
+        display: inline-block;
+        background-image: url('https://cdn.pixabay.com/photo/2016/03/10/23/03/background-1249467_960_720.jpg');
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        width: 33%;
+        height: 90%;
+        padding: 20px;
+        margin-left: 500px;
+      }
+      .welcome {
+        text-align: center;
+      }
+
+      .text {
+        margin-top: 40px;
+      }
+
+      #btn{
+          color: white;
+        /* border: 2px solid black; */
+        background-color: rgb(152, 0, 0);
+        border-radius: 10px;
+        margin-top: 20px;
+        /* width: 33%; */
+        /* height: auto; */
+        padding: 10px 50px;
+        cursor: pointer;
+      }
+
+      #h4 {
+        border: 2px solid black;
+        background-color: black;
+        margin-top: 70px;
+        color: white;
+      }
+      #bmicalculator{
+          color: white;
+      }
+
+      #h{
+          border: 2px solid black;
+          padding: 7px 5px;
+          
+          
+      }
+
+      #w{
+          border: 2px solid black;
+          padding: 7px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="bmicalculator" class="welcome">BMI CALCULATOR</h1>
+    <div>
+      <div class="bmimainservice-box">
+        <h2 class="bmih2">Calculate your BMI right now!</h2>
+        <p class="text">Height (cm)</p>
+        <input type="text" id="h" />
+        <p class="text">Weight (kg)</p>
+        <input type="text" id="w" /> <br />
+        <p id="result"></p>
+        <button id="btn" onclick="BMI()">Calculate</button> <br />
+        <h4 id="h4">What is BMI?</h4>
+        <p>
+          Body mass index(BMI). A measure that relates body weight to height.
+          BMI is sometimes used to measure total body fat and whether a person
+          is a healthy weight. Excess body fat is linked to an increased risk of
+          some diseases including heart disease and some cancers. Also called
+          body mass index.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Document</title>
+    <style>
+      body{
+        font-family: 'poppins';
+        /* background-image: url('https://images.unsplash.com/photo-1557683311-eac922347aa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=829&q=80'); */
+        
+        /* border: 2px solid black; */
+      }
+
+      .table{
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 3px;
+        margin: auto;
+
+      }
+      .th,
+      .td {
+        border: 1px solid black;
+        /* padding: 10px 20px; */
+        text-align: center;
+      }
+      .td{
+        padding: 10px 20px;
+      }
+      #ref {
+        /* table-layout: auto; */
+        column-span: none;
+        /* padding-top: 100px;
+        padding-bottom: 100px; */
+        /* box-sizing: border-box;
+        overflow: hidden; */
+
+        /* height: 150%; */
+      }
+      .heading{
+        /* border: 2px solid black; */
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="heading">Table Practice for the Exam of CSE326 on 7 May 2022</h3>
+    <table class="table">
+      <thead>
+        <tr class="tr">
+          <th class="th" rowspan="3">Day</th>
+          <th class="th" colspan="4">Seminar</th>
+        </tr>
+        <tr class="tr">
+          <th class="th" colspan="2">Schedule</th>
+          <th class="th" rowspan="3" colspan="3">Topic</th>
+        </tr>
+        <tr class="tr">
+          <th class="th">Begin</th>
+          <th class="th">End</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td" rowspan="2">Monday</td>
+          <td class="td" rowspan="2">8pm</td>
+          <td class="td" rowspan="2">5pm</td>
+          <td class="td">Introduction XML</td>
+        </tr>
+        <tr>
+          <td class="td">Validity: DTD and realax NG</td>
+        </tr>
+        <tr>
+          <td class="td" rowspan="3">Tuesday</td>
+          <td class="td">8am</td>
+          <td class="td">11am</td>
+          <td class="td" id="ref">XPath</td>
+        </tr>
+        <tr>
+          <td class="td">11am</td>
+          <td class="td">2pm</td>
+        </tr>
+        <tr>
+          <td class="td">2pm</td>
+          <td class="td">5pm</td>
+          <td class="td" id="ref2">XSL Transformation</td>
+        </tr>
+        <tr>
+          <td class="td" rowspan="2">Wednesday</td>
+          <td class="td"rowspan="2">8am</td>
+          <td class="td">12pm</td>
+          <td class="td">XSL Formating Objects</td>
+        </tr>
+        
+        
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,11 +1,73 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Family Tree</title>
-</head>
-<body>
-    <H1>Family Tree</H1>
-</body>
+    <style>
+      * {
+        background-image: url('family.jpg');
+        height: 100px;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        color: white;
+      }
+
+      .tree {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      .tree .first-parallel {
+        display: inline-block;
+        padding: 0 40px;
+      }
+
+      .tree ul {
+        margin-top: 8px;
+        list-style: none;
+      }
+
+      .head {
+        text-align: center;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 15px 40px;
+        width: 250px;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="head">Family Tree</h1>
+    </header>
+    <p>Balbir Singh</p>
+    <p></p>
+    <div class="tree">
+      <div class="first-parallel">
+        <img src="" alt="photo" />
+        <ul>
+          <li>Subhash Kumar</li>
+          <li>Meena Kumari</li>
+        </ul>
+      </div>
+      <div class="first-parallel">
+        <ul>
+          <li>Vinod Kumar</li>
+          <li>Neelam Rani</li>
+        </ul>
+      </div>
+      <div class="first-parallel">
+        <ul>
+          <li>Jagmal Kumar</li>
+          <li>Meenu Kumari</li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>

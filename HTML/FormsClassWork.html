@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Operators</title>
+    <script>
+      function sum() {
+        var a = parseInt(document.getElementById("t1").value);
+        var b = parseInt(document.getElementById("t2").value);
+        document.getElementById("t3").value = a + b;
+      }
+      function subtract() {
+        var a = parseInt(document.getElementById("t1").value);
+        var b = parseInt(document.getElementById("t2").value);
+        document.getElementById("t3").value = a - b;
+      }
+      function multiply() {
+        var a = parseInt(document.getElementById("t1").value);
+        var b = parseInt(document.getElementById("t2").value);
+        document.getElementById("t3").value = a * b;
+      }
+      function divide() {
+        var a = parseInt(document.getElementById("t1").value);
+        var b = parseInt(document.getElementById("t2").value);
+        document.getElementById("t3").value = a / b;
+      }
+    </script>
+    <style>
+      .box {
+        margin: 5px;
+        padding-left: 5 px;
+      }
+      .forms{
+          background-color: rgb(255, 150, 150);
+          height: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Let's play with Java-script!</h1>
+    <form class="forms">
+      Enter Number A:
+      <input type="text" id="t1" class="box" /><br />
+      Enter Number B:
+      <input type="text" id="t2" class="box" /><br />
+      Result:<input type="text" id="t3" class="box" /><br />
+      <input type="button" value="sum" onclick="sum()" />
+      <input type="button" value="Subtract" onclick="subtract()" />
+      <input type="button" value="Multiply" onclick="multiply()" />
+      <input type="button" value="Divide" onclick="divide()" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
