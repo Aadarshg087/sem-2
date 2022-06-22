@@ -29,7 +29,7 @@ void Binary ::check()
         }
     }
 }
-void Binary :: change()
+void Binary ::change()
 {
     for (int i = 0; i < r.length(); i++)
     {
@@ -43,7 +43,7 @@ void Binary :: change()
         }
     }
 }
-void Binary :: display()
+void Binary ::display()
 {
     cout << "Displaying it Ones Compliment: " << endl;
     for (int i = 0; i < r.length(); i++)
