@@ -13,6 +13,8 @@ void printLCM(){
             cout<<"LCM is: "<<i;
             break;
         }
+        else
+            cout<<"The LCM is 1"<<endl;
         break;
         
     }
